@@ -3,14 +3,14 @@ dosseg
 .model small
 .stack 100h
 .data
-array db 'a','b','c'
+array db 'a','b','c','d'
 
 .code
 main proc
 mov ax,@data
 mov ds,ax
 mov si, offset array
-mov cx,3
+mov cx,4
 
 li:
 mov dx,[si]
