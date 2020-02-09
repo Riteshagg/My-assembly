@@ -1,0 +1,61 @@
+Microsoft (R) Macro Assembler Version 5.00                  1/14/20 18:35:35
+                                                             Page     1-1
+
+
+       1				dosseg 
+       2				.model small 
+       3 0100				.stack 100h 
+       4 0000				.data 
+       5 0000				.code 
+       6 0000				main proc 
+       7				 
+       8 0000  B2 61			mov  dl,'a' 
+       9 0002  B4 02			mov ah , 2 
+      10 0004  CD 21			int 21h 
+      11				 
+      12 0006  B2 72			mov dl,'r' 
+      13 0008  B4 02			mov ah,2 
+      14 000A  CD 21			int 21h 
+      15				 
+      16 000C  B2 68			mov dl,'h' 
+      17 000E  B4 02			mov ah,2 
+      18 0010  CD 21			int 21h 
+      19				 
+      20 0012  B4 4C			mov ah,4ch 
+      21 0014  CD 21			 int 21h 
+      22				 
+      23 0016				main endp 
+      24 0016				end main 
+Microsoft (R) Macro Assembler Version 5.00                  1/14/20 18:35:35
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+DGROUP . . . . . . . . . . . . .  	GROUP
+  _DATA  . . . . . . . . . . . .  	0000	WORD	PUBLIC	'DATA'
+  STACK  . . . . . . . . . . . .  	0100	PARA	STACK	'STACK'
+_TEXT  . . . . . . . . . . . . .  	0016	WORD	PUBLIC	'CODE'
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+MAIN . . . . . . . . . . . . . .  	N PROC	0000	_TEXT	Length = 0016
+
+@CODE  . . . . . . . . . . . . .  	TEXT  _TEXT		
+@CODESIZE  . . . . . . . . . . .  	TEXT  0		
+@DATASIZE  . . . . . . . . . . .  	TEXT  0		
+@FILENAME  . . . . . . . . . . .  	TEXT  first		
+
+
+     24 Source  Lines
+     24 Total   Lines
+     15 Symbols
+
+  50638 + 465906 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
